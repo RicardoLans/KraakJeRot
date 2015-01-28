@@ -1,0 +1,8 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+   
+    <MediaElement x:Key="Police" AutoPlay="False" Source="Police.mp3"/>
+    <MediaElement x:Key="Helicopter" AutoPlay="False" Source="Helicopter.mp3"/>
+
+</ResourceDictionary>

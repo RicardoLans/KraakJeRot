@@ -1,0 +1,423 @@
+﻿<UserControl x:Class="ResourceFramework.UserControls.NPC.Kraker" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<UserControl.Resources>
+		<Storyboard x:Name="stb_dead2">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Shirt" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationX)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-20" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-30" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-40" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-40" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-40" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-40" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Shirt" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-20" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-30" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-30" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-30" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Shirt" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationZ)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Neck" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationX)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-20" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-30" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-40" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Neck" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-20" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-30" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Head" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationX)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-20" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-30" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-40" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Head" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-20" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-30" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Trouser" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationX)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-20" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-30" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-40" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Trouser" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-20" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-30" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="RightHand" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationX)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-20" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-30" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-40" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="RightHand" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-20" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-30" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-30" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="RightArm" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationX)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-20" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-30" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-40" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="RightArm" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-20" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-30" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="LeftHand" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationX)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-20" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-30" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-40" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="LeftHand" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-20" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-30" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-30" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="LeftArm" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationX)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-20" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-30" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-40" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="LeftArm" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-20" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-30" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Shirt" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-25" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-40" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-55" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-70" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-85" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-100" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-115" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-130" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-145" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Shirt" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="25" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="40" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="55" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="70" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="85" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="100" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="115" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="130" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="145" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Neck" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-12.039" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-30.198" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-53.971" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-70.971" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-86.971" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-101.971" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-116.471" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-132.221" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-148.221" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-162.721" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Neck" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="10.03" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="25.136" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="40.971" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="63.986" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="77.986" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="93.736" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="108.486" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="123.486" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="139.236" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="154.069" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Head" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-12.667" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-31.334" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-57.334" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-74.667" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-92.667" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-108" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-121.333" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-138" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-152" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-168" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Head" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="29.333" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="43.333" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="68" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="80" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="95.333" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="109.333" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="124" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="142" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="155.333" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Trouser" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-21" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-31.667" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-43" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-58.333" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-73.666" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-88.999" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-102.999" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-118.999" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-133.666" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Trouser" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="25.667" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="36.334" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="51.001" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="65.001" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="79.001" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="93.668" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="109.668" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="125.001" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="139.668" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="RightArm" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-14" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-26" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-43.333" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-60" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-73.333" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-88.666" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-103.999" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-119.999" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-133.999" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-147.999" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="RightArm" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="26" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="43.333" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="59.333" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="74" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="89.333" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="104" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="120" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="134.667" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="150" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="LeftArm" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-14" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-26" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-43.333" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-60" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-73.333" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-88.666" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-103.999" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-119.999" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-133.999" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-147.999" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="LeftArm" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="10" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="26" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="43.333" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="59.333" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="74" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="89.333" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="104" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="120" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="134.667" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="150" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="RightHand" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-14" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-26" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-40.643" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-56.628" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-69.961" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-85.294" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-99.961" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-116.628" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-130.628" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-144.628" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="RightHand" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="8.667" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="24.667" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="41.96" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="55.946" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="71.279" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="86.612" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="101.279" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="116.612" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="131.945" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="146.612" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="LeftHand" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-14" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-26" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-40.643" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-56.628" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-69.961" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-85.294" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-99.961" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-116.628" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-130.628" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-144.628" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="LeftHand" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="8.667" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="24.667" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="41.96" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="55.946" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="71.279" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="86.612" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="101.279" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="116.612" />
+				<EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="131.945" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="146.612" />
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="stb_dead">
+			<PointAnimation Storyboard.TargetName="Trouser" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Duration="0" To="0.862,1.38900005817413" />
+			<PointAnimation Storyboard.TargetName="Shirt" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Duration="0" To="0.855,1.751" />
+			<PointAnimation Storyboard.TargetName="Neck" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Duration="0" To="1.192,2.935" />
+			<PointAnimation Storyboard.TargetName="Head" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Duration="0" To="1.004,3.357" />
+			<PointAnimation Storyboard.TargetName="RightHand" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Duration="0" To="1.911,1.727" />
+			<PointAnimation Storyboard.TargetName="RightArm" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Duration="0" To="2.281,1.931" />
+			<PointAnimation Storyboard.TargetName="LeftHand" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Duration="0" To="1.083,1.73" />
+			<PointAnimation Storyboard.TargetName="LeftArm" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Duration="0" To="0.811,1.902"  />
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Trouser" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-89.88" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Shirt" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-90.09" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Neck" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-89.222" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Head" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-88.925" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="RightArm" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-89.948" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="RightHand" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-91.008" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="LeftArm" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-90.403" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="LeftHand" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-89.541" />
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="stb_dead1">
+			<PointAnimation Storyboard.TargetName="Trouser" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Duration="0" To="0.212,1.373" />
+			<PointAnimation Storyboard.TargetName="Shirt" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Duration="0" To="0.209,1.729" />
+			<PointAnimation Storyboard.TargetName="Neck" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Duration="0" To="0.3,2.902" />
+			<PointAnimation Storyboard.TargetName="Head" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Duration="0" To="0.243,3.315" />
+			<PointAnimation Storyboard.TargetName="RightHand" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Duration="0" To="0.43,1.708" />
+			<PointAnimation Storyboard.TargetName="RightArm" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Duration="0" To="0.526,1.91" />
+			<PointAnimation Storyboard.TargetName="LeftHand" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Duration="0" To="0.25,1.711" />
+			<PointAnimation Storyboard.TargetName="LeftArm" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Duration="0" To="0.182,1.884" />
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Trouser" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="89.808" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Shirt" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="90.272" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Neck" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="90.104" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="Head" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="90.052" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="RightArm" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="90.102" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="RightHand" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="89.547" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="LeftArm" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="89.717" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetName="LeftHand" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0" />
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="91.12" />
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" Height="260" Width="105">
+		<Canvas x:Name="Kraker0" Margin="0,-45,0,45"></Canvas>
+		<Canvas x:Name="cnv_weaponSurface" Margin="8,190,0,0" Canvas.Left="8" Canvas.Top="190" Height="1" Width="1" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top">
+			<Canvas.RenderTransform>
+				<CompositeTransform />
+			</Canvas.RenderTransform>
+		</Canvas>
+	</Grid>
+</UserControl>

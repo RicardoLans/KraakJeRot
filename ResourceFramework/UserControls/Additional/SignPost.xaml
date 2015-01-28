@@ -1,0 +1,31 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="ResourceFramework.UserControls.Additional.SignPost"
+	x:Name="signPost">
+	
+	<Canvas x:Name="canvasSignpost" Height="950" Width="420" Cursor="Hand">
+		<Path Data="M196.41634,18.625 L174,52 L174.66667,945 L196.66667,945 z" Fill="#FFFFFFFF" Height="926.375" Canvas.Left="174" Stretch="Fill" Canvas.Top="18.625" UseLayoutRounding="False" Width="22.667"/>
+        <Path Data="M196.41667,18.666666 L224.99966,49.968414 L226.43715,945.05475 L197.06218,945.1792 z" Fill="#FFB3B3B3" Height="926.521" Canvas.Left="196.417" Stretch="Fill" Canvas.Top="18.667" UseLayoutRounding="False" Width="30.02"/>
+        <Path Data="M196.9375,19.5625 L197.187,31.813 L226.75183,51.564304 z" Fill="#FF999999" Height="32" Canvas.Left="196.938" Stretch="Fill" Canvas.Top="19.562" UseLayoutRounding="False" Width="29.875"/>
+        <Path Data="M224.0625,149.8125 L223.7505,179.938 L205.18822,157.31288 z" Fill="#FF5B5B5B" Height="30.126" Canvas.Left="205.188" Stretch="Fill" Canvas.Top="149.812" UseLayoutRounding="False" Width="18.874"/>
+        <Path Data="M204.28125,156.46875 L216.09399,157.12476 L393.37115,105.31181 L381.16309,101.4154 z" Fill="#FF6D6D6D" Height="55.708" Canvas.Left="204.281" Stretch="Fill" Canvas.Top="101.417" UseLayoutRounding="False" Width="189.094"/>
+        <Path Data="M402.5,57.125 L412.75,63.125 L390.625,106.25 L378.875,102.375 z" Fill="#FF999999" Height="49.125" Canvas.Left="378.875" Stretch="Fill" Canvas.Top="57.125" UseLayoutRounding="False" Width="33.875"/>
+        <Path Data="M204.25,99.375 L205.125,157.125 L379.25,103.375 L403.5,57 L364.5,36.75 z" Fill="#FFE6E6E6" Height="120.375" Canvas.Left="204.25" Stretch="Fill" Canvas.Top="36.75" UseLayoutRounding="False" Width="199.25"/>
+        <Path Data="M175.75,115.08334 L190.75,96.583672 L175.75,92.75074 z" Fill="#FF5B5B5B" Height="22.333" Canvas.Left="175.75" Stretch="Fill" Canvas.Top="92.75" UseLayoutRounding="False" Width="15"/>
+        <Path Data="M190.75,96.083336 L180.33333,97.417 L14.255564,51.761509 L25.255217,48.26239 z" Fill="#FF6D6D6D" Height="49.167" Canvas.Left="14.25" Stretch="Fill" Canvas.Top="48.25" UseLayoutRounding="False" Width="176.5"/>
+        <Path Data="M-0.083333336,12.083333 L10.166333,7.8336663 L26.33214,49.580727 L14.249381,53.080811 z" Fill="#FF999999" Height="45.25" Canvas.Left="-0.083" Stretch="Fill" Canvas.Top="7.833" UseLayoutRounding="False" Width="26.416"/>
+        <Path Data="M-0.03125,10.71875 L10.656,7.2966251 L18.797066,3.1869755 L15.031253,3.2021022 z" Fill="#FFF2F2F2" Height="7.531" Canvas.Left="-0.281" Stretch="Fill" Canvas.Top="3.813" UseLayoutRounding="False" Width="18.828" RenderTransformOrigin="0.5,0.5">
+        	<Path.RenderTransform>
+        		<CompositeTransform Rotation="-5.365"/>
+        	</Path.RenderTransform>
+        </Path>
+        <Path Data="M10,8 L17.625,3 L73.75,3 L190.625,49.5 L190.58333,97.041664 L25.541666,48.583172 z" Fill="#FFCCCCCC" Height="94.042" Canvas.Left="10" Stretch="Fill" Canvas.Top="3" UseLayoutRounding="False" Width="180.625"/>
+
+        <TextBlock Canvas.Left="215" x:Name="txtSign" Canvas.Top="110" Width="150" Height="50" TextAlignment="Center" FontSize="20" Foreground="Black" FontWeight="SemiBold" d:IsHidden="True" >
+            <TextBlock.RenderTransform>
+                <RotateTransform Angle="-19" />
+            </TextBlock.RenderTransform>
+        </TextBlock>
+
+    </Canvas>
+</UserControl>

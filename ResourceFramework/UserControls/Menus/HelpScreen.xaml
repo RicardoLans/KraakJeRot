@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="ResourceFramework.UserControls.Menus.HelpScreen"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:Controls="clr-namespace:ResourceFramework.UserControls.Additional">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary x:Name="btnResource" Source="../../Styles/CircularButton.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Canvas x:Name="canvasHelpMenu" >
+        <Image x:Name="BackgroundImage" Source="../../Images/empty_wall.png" Width="1600" Height="1200"/>
+		
+        <TextBlock Text="Kraak je Rot" Canvas.Left="400" Canvas.Top="100" FontSize="120" Foreground="Black" FontWeight="Bold"/>
+        <TextBlock Text="Help" Canvas.Left="700" Canvas.Top="370" FontSize="60" Foreground="White"/>
+
+        <!--<Image Source="../../Images/smudge.png" Canvas.Left="0" Width="1600" Height="520" Stretch="Fill" Canvas.Top="410" />-->
+
+        <TextBlock x:Name="txtKeyName" Canvas.Left="950" Canvas.Top="450" FontSize="36" Foreground="White"/>
+        <Canvas x:Name="cnvsMe"/>
+
+        <Grid Name="btnGrid" Canvas.Left="100" Canvas.Top="400" Height="500" Width="480">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>            
+        </Grid>
+       
+        <Controls:SignPost x:Name="SignPost" Canvas.Top="100" Canvas.Left="-200"/>
+    </Canvas>
+</UserControl>
+
+    

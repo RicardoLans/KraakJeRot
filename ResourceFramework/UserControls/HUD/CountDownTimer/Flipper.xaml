@@ -1,0 +1,152 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d" 
+	x:Class="ResourceFramework.UserControls.HUD.Flipper">
+    <UserControl.Resources> 
+        <Storyboard x:Name="Storyboard1">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="BlockFlipTop" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                		<CubicEase EasingMode="EaseIn"/>
+                	</EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.45" Value="0">
+                	<EasingDoubleKeyFrame.EasingFunction>
+                		<CubicEase EasingMode="EaseIn"/>
+                	</EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="BlockFlipTop" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.45">
+                	<DiscreteObjectKeyFrame.Value>
+                		<Visibility>Collapsed</Visibility>
+                	</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="BlockFlipBottom" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                		<Visibility>Collapsed</Visibility>
+                	</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.45">
+                	<DiscreteObjectKeyFrame.Value>
+                		<Visibility>Visible</Visibility>
+                	</DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="BlockFlipBottom">
+            	<EasingDoubleKeyFrame KeyTime="0:0:0.45" Value="0">
+            		<EasingDoubleKeyFrame.EasingFunction>
+            			<CubicEase EasingMode="EaseOut"/>
+            		</EasingDoubleKeyFrame.EasingFunction>
+            	</EasingDoubleKeyFrame>
+            	<EasingDoubleKeyFrame KeyTime="0:0:0.85" Value="1">
+            		<EasingDoubleKeyFrame.EasingFunction>
+            			<CubicEase EasingMode="EaseOut"/>
+            		</EasingDoubleKeyFrame.EasingFunction>
+            	</EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Arial"/>
+            <Setter Property="Foreground" Value="White"/>
+            <!--<Setter Property="Margin" Value="0, -1,"/>-->
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
+   
+    <LinearGradientBrush x:Key="BackgroundBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+        	<GradientStop Color="#FF434343" Offset="1"/>
+        	<GradientStop Color="#FF161616"/>
+        </LinearGradientBrush>
+		<LinearGradientBrush x:Key="BackgroundBrush2" EndPoint="0.5,1" StartPoint="0.5,0">
+        	<LinearGradientBrush.RelativeTransform>
+        		<TransformGroup>
+        			<ScaleTransform CenterY="0.5" CenterX="0.5" ScaleY="-1"/>
+        			<SkewTransform CenterY="0.5" CenterX="0.5"/>
+        			<RotateTransform CenterY="0.5" CenterX="0.5"/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</LinearGradientBrush.RelativeTransform>
+        	<GradientStop Color="#FF434343" Offset="1"/>
+        	<GradientStop Color="#FF161616"/>
+        </LinearGradientBrush>
+    </UserControl.Resources>
+    <Border x:Name="LayoutRoot" BorderThickness="1" BorderBrush="#FF2F2F2F">
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="0.5*"/>
+				<RowDefinition Height="0.5*"/>
+			</Grid.RowDefinitions>
+			<!-- Top -->
+			<Border x:Name="BlockTop" 
+				Background="{StaticResource BackgroundBrush}">
+				<Viewbox x:Name="vb1" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Top" Height="{Binding Height, ElementName=LayoutRoot, Mode=OneWay}">
+					<TextBlock  x:Name="textBlockTop" Text="01"  />
+				</Viewbox>
+			</Border>
+			<!-- Bottom -->
+            <Border x:Name="BlockBottom"			
+				Grid.Row="1" Background="{StaticResource BackgroundBrush2}" d:IsHidden="True">
+				<Viewbox Stretch="Fill" x:Name="vb2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="{Binding Height, ElementName=LayoutRoot, Mode=OneWay}">
+					<TextBlock x:Name="textBlockBottom" Text="00" />
+				</Viewbox>
+			</Border>
+			<!-- Flip -->
+            <Border x:Name="BlockFlipTop" RenderTransformOrigin="0.5,1" 
+				 Background="{StaticResource BackgroundBrush}" d:IsHidden="True" >
+				<Border.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Border.RenderTransform>
+				<Viewbox x:Name="vb3" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Top" Height="{Binding Height, ElementName=LayoutRoot, Mode=OneWay}">
+					<TextBlock x:Name="textBlockFlipTop" Text="00"  />
+				</Viewbox>
+			</Border>
+			<Border x:Name="BlockFlipBottom" RenderTransformOrigin="0.5,0" Grid.Row="1"
+				 Visibility="Collapsed" Background="{StaticResource BackgroundBrush2}" d:IsHidden="True">
+				<Border.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Border.RenderTransform>
+				<Viewbox x:Name="vb4" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="{Binding Height, ElementName=LayoutRoot, Mode=OneWay}">
+                    <TextBlock x:Name="textBlockFlipBottom" Text="01"
+						RenderTransformOrigin="0.5,0.5" >
+						<TextBlock.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform ScaleY="1"/>
+								<SkewTransform/>
+								<RotateTransform/>
+							</TransformGroup>
+						</TextBlock.RenderTransform>
+					</TextBlock>
+				</Viewbox>
+			</Border>
+			<Rectangle Grid.RowSpan="2" Height="3" d:IsHidden="True">
+				<Rectangle.Fill>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="#7F000000" Offset="0.5"/>
+						<GradientStop Color="#66A9A9A9"/>
+						<GradientStop Color="#66878787" Offset="0.984"/>
+					</LinearGradientBrush>
+				</Rectangle.Fill>
+			</Rectangle>
+		</Grid>
+	</Border>
+</UserControl>

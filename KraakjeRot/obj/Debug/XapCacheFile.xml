@@ -1,0 +1,10 @@
+﻿<xapCache source="D:\GitHub\KraakJeRot\KraakjeRot\Bin\Debug\KraakjeRot.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="2015-01-28 09:57:42">
+  <file source="D:\GitHub\KraakJeRot\KraakjeRot\obj\Debug\KraakjeRot.dll" archivePath="KraakjeRot.dll" lastWriteTime="2015-01-28 09:57:41" />
+  <file source="D:\GitHub\KraakJeRot\GameFramework\Bin\Debug\GameFramework.dll" archivePath="GameFramework.dll" lastWriteTime="2015-01-28 09:56:06" />
+  <file source="D:\GitHub\KraakJeRot\HelperFramework\Bin\Debug\HelperFramework.dll" archivePath="HelperFramework.dll" lastWriteTime="2015-01-28 09:56:05" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v5.0\Libraries\Microsoft.Expression.Controls.dll" archivePath="Microsoft.Expression.Controls.dll" lastWriteTime="2013-02-18 14:32:08" />
+  <file source="D:\GitHub\KraakJeRot\ResourceFramework\Bin\Debug\ResourceFramework.dll" archivePath="ResourceFramework.dll" lastWriteTime="2015-01-28 09:57:37" />
+  <file source="D:\GitHub\KraakJeRot\TimerFramework\Bin\Debug\TimerFramework.dll" archivePath="TimerFramework.dll" lastWriteTime="2015-01-28 09:56:06" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v5.0\Libraries\Microsoft.Expression.Drawing.dll" archivePath="Microsoft.Expression.Drawing.dll" lastWriteTime="2013-02-18 14:32:08" />
+  <file source="D:\GitHub\KraakJeRot\KraakjeRot\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2015-01-28 09:56:09" />
+</xapCache>

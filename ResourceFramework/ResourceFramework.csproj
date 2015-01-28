@@ -1,0 +1,755 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{108757B9-E35B-4297-9117-2AE7260FAE51}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ResourceFramework</RootNamespace>
+    <AssemblyName>ResourceFramework</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.20525.0</ExpressionBlendVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Controls" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Controls, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Navigation, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\Additional\CreditHolder.xaml.cs">
+      <DependentUpon>CreditHolder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Additional\FishMenu.xaml.cs">
+      <DependentUpon>FishMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Additional\SignPost.xaml.cs">
+      <DependentUpon>SignPost.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Defences\Board.xaml.cs">
+      <DependentUpon>Board.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Defences\Shield.xaml.cs">
+      <DependentUpon>Shield.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HUD\CountDownTimer\CountDownTimer.xaml.cs">
+      <DependentUpon>CountDownTimer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HUD\CountDownTimer\Flipper.xaml.cs">
+      <DependentUpon>Flipper.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HUD\CurrentWeapon.xaml.cs">
+      <DependentUpon>CurrentWeapon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HUD\HelpButton.xaml.cs">
+      <DependentUpon>HelpButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HUD\LifeGauge.xaml.cs">
+      <DependentUpon>LifeGauge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HUD\SoundControl.xaml.cs">
+      <DependentUpon>SoundControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Levels\Level1.xaml.cs">
+      <DependentUpon>Level1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Levels\Level2.xaml.cs">
+      <DependentUpon>Level2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Levels\Level3.xaml.cs">
+      <DependentUpon>Level3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Menus\ChooseSideScreen.xaml.cs">
+      <DependentUpon>ChooseSideScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Menus\CreditsScreen.xaml.cs">
+      <DependentUpon>CreditsScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Menus\EndScreen.xaml.cs">
+      <DependentUpon>EndScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Menus\HelpScreen.xaml.cs">
+      <DependentUpon>HelpScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Menus\HighScoresScreen.xaml.cs">
+      <DependentUpon>HighScoresScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Menus\LevelHolder.xaml.cs">
+      <DependentUpon>LevelHolder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Menus\IntroScreen.xaml.cs">
+      <DependentUpon>IntroScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NPCs\Arms\LeftArm1.xaml.cs">
+      <DependentUpon>LeftArm1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NPCs\Arms\RightArm1.xaml.cs">
+      <DependentUpon>RightArm1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NPCs\Hands\LeftHand1.xaml.cs">
+      <DependentUpon>LeftHand1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NPCs\Hands\RightHand1.xaml.cs">
+      <DependentUpon>RightHand1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NPCs\Heads\Head1.xaml.cs">
+      <DependentUpon>Head1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NPCs\Heads\Head2.xaml.cs">
+      <DependentUpon>Head2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NPCs\Heads\Head3.xaml.cs">
+      <DependentUpon>Head3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NPCs\Heads\Head4.xaml.cs">
+      <DependentUpon>Head4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NPCs\Heads\Head5.xaml.cs">
+      <DependentUpon>Head5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NPCs\Kraker.xaml.cs">
+      <DependentUpon>Kraker.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserControls\NPCs\ME.xaml.cs">
+      <DependentUpon>ME.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NPCs\Necks\Neck1.xaml.cs">
+      <DependentUpon>Neck1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NPCs\Shirts\Shirt6.xaml.cs">
+      <DependentUpon>Shirt6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NPCs\Shirts\Shirt5.xaml.cs">
+      <DependentUpon>Shirt5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NPCs\Shirts\Shirt4.xaml.cs">
+      <DependentUpon>Shirt4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NPCs\Shirts\Shirt3.xaml.cs">
+      <DependentUpon>Shirt3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NPCs\Shirts\Shirt2.xaml.cs">
+      <DependentUpon>Shirt2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NPCs\Trousers\Trouser1.xaml.cs">
+      <DependentUpon>Trouser1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NPCs\Shirts\Shirt1.xaml.cs">
+      <DependentUpon>Shirt1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NPCs\Window.xaml.cs">
+      <DependentUpon>Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Weapons\Bin.xaml.cs">
+      <DependentUpon>Bin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Weapons\Brick.xaml.cs">
+      <DependentUpon>Brick.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Weapons\Bullets\Bullet1.xaml.cs">
+      <DependentUpon>Bullet1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Weapons\Cannabis.xaml.cs">
+      <DependentUpon>Cannabis.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Weapons\Chair.xaml.cs">
+      <DependentUpon>Chair.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Weapons\Flowers2.xaml.cs">
+      <DependentUpon>Flowers2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Weapons\DummyGun.xaml.cs">
+      <DependentUpon>DummyGun.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Weapons\Eggs.xaml.cs">
+      <DependentUpon>Eggs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Weapons\StunGun.xaml.cs">
+      <DependentUpon>StunGun.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Weapons\KitchenEquipment.xaml.cs">
+      <DependentUpon>KitchenEquipment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Weapons\Table.xaml.cs">
+      <DependentUpon>Table.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Weapons\TearGas.xaml.cs">
+      <DependentUpon>TearGas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Weapons\WaterBalloon.xaml.cs">
+      <DependentUpon>WaterBalloon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Weapons\WaterCanon.xaml.cs">
+      <DependentUpon>WaterCanon.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\IntroScreen\" />
+    <Folder Include="Images\LevelHolder\" />
+    <Folder Include="Video\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Audio\BackgroundRepository.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Audio\SoundRepository.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\CircularButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\EmptyButtonStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\LifeGauge.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\ScoreListBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Text\TextDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Additional\CreditHolder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Additional\FishMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Additional\SignPost.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Defences\Board.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Defences\Shield.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\HUD\CountDownTimer\CountDownTimer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\HUD\CountDownTimer\Flipper.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\HUD\CurrentWeapon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\HUD\HelpButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\HUD\LifeGauge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\HUD\SoundControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Levels\Level1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Levels\Level2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Levels\Level3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Menus\ChooseSideScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Menus\CreditsScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Menus\EndScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Menus\HelpScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Menus\HighScoresScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Menus\LevelHolder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Menus\IntroScreen.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\NPCs\Arms\LeftArm1.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\NPCs\Arms\RightArm1.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\NPCs\Hands\LeftHand1.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\NPCs\Hands\RightHand1.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\NPCs\Heads\Head1.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\NPCs\Heads\Head2.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\NPCs\Heads\Head3.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\NPCs\Heads\Head4.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\NPCs\Heads\Head5.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\NPCs\Kraker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\NPCs\ME.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\NPCs\Necks\Neck1.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\NPCs\Shirts\Shirt6.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\NPCs\Shirts\Shirt5.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\NPCs\Shirts\Shirt4.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\NPCs\Shirts\Shirt3.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\NPCs\Shirts\Shirt2.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\NPCs\Trousers\Trouser1.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\NPCs\Shirts\Shirt1.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\NPCs\Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Weapons\Bin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Weapons\Brick.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Weapons\Bullets\Bullet1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Weapons\Cannabis.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Weapons\Chair.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Weapons\Flowers2.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Weapons\DummyGun.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Weapons\Eggs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Weapons\StunGun.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Weapons\KitchenEquipment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Weapons\Table.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Weapons\TearGas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Weapons\WaterBalloon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Weapons\WaterCanon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ChooseSideScreen\ButtonKraker.png" />
+    <Resource Include="Images\ChooseSideScreen\ButtonKrakerPressed.png" />
+    <Resource Include="Images\ChooseSideScreen\ButtonME.png" />
+    <Resource Include="Images\ChooseSideScreen\ButtonMEPressed.png" />
+    <Resource Include="Images\Buttons\stone.png" />
+    <Content Include="Images\graffiti_kraker.png" />
+    <Content Include="Images\graffiti_me.png" />
+    <Content Include="Images\Weapons\image0.png" />
+    <Content Include="Images\Weapons\image1.png" />
+    <Content Include="Images\Weapons\brick.png" />
+    <Content Include="Images\Weapons\image10.png" />
+    <Content Include="Images\Weapons\image11.png" />
+    <Content Include="Images\Weapons\image12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GameFramework\GameFramework.csproj">
+      <Project>{6E777A90-C0DF-44BC-AD08-41AF907F297F}</Project>
+      <Name>GameFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HelperFramework\HelperFramework.csproj">
+      <Project>{AAD49854-974A-4D49-BFB6-F04CBC190714}</Project>
+      <Name>HelperFramework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Buttons\next.png" />
+    <Resource Include="Images\Buttons\pause.png" />
+    <Resource Include="Images\Buttons\play.png" />
+    <Resource Include="Images\Buttons\previous.png" />
+    <Resource Include="Images\Buttons\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Audio\Applause.mp3" />
+    <Resource Include="Audio\Applause2.mp3" />
+    <Resource Include="Audio\Bullet.mp3" />
+    <Resource Include="Audio\Button1.mp3" />
+    <Resource Include="Audio\Button3.mp3" />
+    <Resource Include="Audio\Button4.mp3" />
+    <Resource Include="Audio\Failure.mp3" />
+    <Resource Include="Audio\FailureLaugh.mp3" />
+    <Resource Include="Audio\Footsteps2.mp3" />
+    <Resource Include="Audio\Helicopter.mp3" />
+    <Resource Include="Audio\Jump.mp3" />
+    <Resource Include="Audio\Police.mp3" />
+    <Resource Include="Audio\Popping.mp3" />
+    <Resource Include="Audio\PowerUp.mp3" />
+    <Resource Include="Audio\Shotgun.mp3" />
+    <Resource Include="Audio\SilencerShot.mp3" />
+    <Resource Include="Audio\Siren.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\grave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Buttons\stoneNotSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\CreditScreen\jeroen.jpg" />
+    <Content Include="Images\CreditScreen\kelvin.jpg" />
+    <Content Include="Images\CreditScreen\kelvinGroot.jpg" />
+    <Content Include="Images\CreditScreen\ricardo.jpg" />
+    <Content Include="Images\CreditScreen\ricardoGroot.png" />
+    <Content Include="Images\Levels\level_1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Audio\Scream.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\EndScreen\main.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\EndScreen\main2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\HighScoresScreen\main.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\empty_wall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\smudge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\HelpScreen\btnDown.png" />
+    <Resource Include="Images\HelpScreen\btnLeft.png" />
+    <Resource Include="Images\HelpScreen\btnRight.png" />
+    <Resource Include="Images\HelpScreen\btnUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Weapons\flowers_opvulling.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Levels\level_1_window_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Buttons\UnMute.png" />
+    <Resource Include="Images\Buttons\Mute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Buttons\Control\a.png" />
+    <Resource Include="Images\Buttons\Control\control.png" />
+    <Resource Include="Images\Buttons\Control\d.png" />
+    <Resource Include="Images\Buttons\Control\down.png" />
+    <Resource Include="Images\Buttons\Control\e.png" />
+    <Resource Include="Images\Buttons\Control\escape.png" />
+    <Resource Include="Images\Buttons\Control\left.png" />
+    <Resource Include="Images\Buttons\Control\q.png" />
+    <Resource Include="Images\Buttons\Control\right.png" />
+    <Resource Include="Images\Buttons\Control\s.png" />
+    <Resource Include="Images\Buttons\Control\space.png" />
+    <Resource Include="Images\Buttons\Control\up.png" />
+    <Resource Include="Images\Buttons\Control\w.png" />
+    <Resource Include="Images\Buttons\Control\z.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

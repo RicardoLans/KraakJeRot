@@ -1,0 +1,15 @@
+﻿<Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"                 
+             x:Class="KraakjeRot.App">
+    <Application.Resources>
+        
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary x:Name="AudioResources" Source="/ResourceFramework;component/Audio/SoundRepository.xaml" />
+                <ResourceDictionary x:Name="AudioBackgroundResources" Source="/ResourceFramework;component/Audio/BackgroundRepository.xaml" />
+                <ResourceDictionary x:Name="TextResources" Source="/ResourceFramework;component/Text/TextDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        
+    </Application.Resources>
+</Application>

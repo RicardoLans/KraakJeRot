@@ -1,0 +1,15 @@
+C:\DMGaming\Webgames\HelperFramework\Bin\Debug\HelperFramework.dll
+C:\DMGaming\Webgames\HelperFramework\Bin\Debug\HelperFramework.pdb
+C:\DMGaming\Webgames\HelperFramework\obj\Debug\ResolveAssemblyReference.cache
+C:\DMGaming\Webgames\HelperFramework\obj\Debug\HelperFramework.dll
+C:\DMGaming\Webgames\HelperFramework\obj\Debug\HelperFramework.pdb
+C:\Projects\Game\Webgames\HelperFramework\Bin\Debug\HelperFramework.dll
+C:\Projects\Game\Webgames\HelperFramework\Bin\Debug\HelperFramework.pdb
+C:\Projects\Game\Webgames\HelperFramework\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Game\Webgames\HelperFramework\obj\Debug\HelperFramework.dll
+C:\Projects\Game\Webgames\HelperFramework\obj\Debug\HelperFramework.pdb
+D:\GitHub\KraakJeRot\HelperFramework\Bin\Debug\HelperFramework.dll
+D:\GitHub\KraakJeRot\HelperFramework\Bin\Debug\HelperFramework.pdb
+D:\GitHub\KraakJeRot\HelperFramework\obj\Debug\HelperFramework.csprojResolveAssemblyReference.cache
+D:\GitHub\KraakJeRot\HelperFramework\obj\Debug\HelperFramework.dll
+D:\GitHub\KraakJeRot\HelperFramework\obj\Debug\HelperFramework.pdb

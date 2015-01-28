@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="ResourceFramework.UserControls.HUD.LifeGauge"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     Width="410" Height="100">
+    <UserControl.Resources>
+        <LinearGradientBrush x:Key="brushStem" StartPoint=".5,0" EndPoint=".5,1">
+            <GradientStop Offset="0" Color="Red" />
+            <GradientStop Offset="0.3" Color="Pink" />
+            <GradientStop Offset="1" Color="Red" />
+        </LinearGradientBrush>     
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot">        
+        <Grid.RenderTransform>
+            <ScaleTransform x:Name="CanvasScale" ScaleX="1" ScaleY="1"/>
+        </Grid.RenderTransform>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="300" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Ellipse Grid.Column="0" Stroke="SteelBlue" StrokeThickness="3" />
+        <Border Grid.Column="1" Height="70" CornerRadius="0 20 20 0" BorderThickness="0 3 3 3" BorderBrush="SteelBlue" />
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80" />
+                <ColumnDefinition Width="160" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="15" />
+                <RowDefinition Height="70" />
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="1" Grid.Column="1"                                    
+                                    BorderBrush="SteelBlue"
+                                    BorderThickness="0 3 0 3"
+                                    Background="{StaticResource brushStem}" />
+        </Grid>
+
+        <Border x:Name="LifeIndicator" CornerRadius="0 20 20 0" Grid.Column="1" Height="64" Width="300" 
+                                BorderThickness="0 0 2 0" BorderBrush="SteelBlue" HorizontalAlignment="Left" 
+                                Background="{StaticResource brushStem}" />
+
+
+        <Ellipse Grid.Row="0" Width="100" Height="100" Stroke="SteelBlue">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="/ResourceFramework;component/Images/grave.png" Stretch="UniformToFill" />
+            </Ellipse.Fill>
+        </Ellipse>
+
+    </Grid>
+
+</UserControl>

@@ -1,0 +1,6 @@
+D:\GitHub\KraakJeRot\KraakjeRot.Web\bin\KraakjeRot.Web.dll.config
+D:\GitHub\KraakJeRot\KraakjeRot.Web\bin\KraakjeRot.Web.dll
+D:\GitHub\KraakJeRot\KraakjeRot.Web\bin\KraakjeRot.Web.pdb
+D:\GitHub\KraakJeRot\KraakjeRot.Web\obj\Debug\KraakjeRot.Web.csprojResolveAssemblyReference.cache
+D:\GitHub\KraakJeRot\KraakjeRot.Web\obj\Debug\KraakjeRot.Web.dll
+D:\GitHub\KraakJeRot\KraakjeRot.Web\obj\Debug\KraakjeRot.Web.pdb

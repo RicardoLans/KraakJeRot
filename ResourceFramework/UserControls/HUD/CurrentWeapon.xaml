@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="ResourceFramework.UserControls.HUD.CurrentWeapon"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="{Binding Height}" Width="{Binding Width}" x:Name="currentWeapon">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary x:Name="ButtonStyle" Source="/ResourceFramework;component/Styles/CircularButton.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot">
+        <!--<Grid.RenderTransform>
+            <ScaleTransform x:Name="CanvasScale" ScaleX="1" ScaleY="1"/>
+        </Grid.RenderTransform>-->
+        <Viewbox x:Name="vwBox">
+             <Button IsTabStop="False" Style="{StaticResource btn}" Width="125" x:Name="WeaponContentHolder" Background="DarkKhaki" Height="125"  />
+        </Viewbox>
+    </Grid>
+</UserControl>
+ 

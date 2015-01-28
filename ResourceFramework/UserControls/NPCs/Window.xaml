@@ -1,0 +1,12 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ x:Name="userControl"
+
+	x:Class="ResourceFramework.UserControls.NPCs.Window"
+ Width="250" Height="300">
+
+		<Canvas x:Name="NPCSurface" 
+			Height="{Binding Height, ElementName=userControl, FallbackValue=300}" 
+			Width="{Binding Width, ElementName=userControl, FallbackValue=250}" />
+</UserControl>

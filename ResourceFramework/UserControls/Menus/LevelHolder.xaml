@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="ResourceFramework.UserControls.Menus.LevelHolder"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid x:Name="LayoutRoot" Background="Teal">
+		<Image x:Name="BackgroundImage" Source="../../Images/LevelHolder/empty_wall.png" Width="1600" Height="1200"/>
+
+		<!-- HUD Surface -->
+		<Canvas x:Name="hudSurface" Canvas.ZIndex="1" />
+
+		<!-- Level Surface -->
+		<Canvas x:Name="levelSurface" Canvas.ZIndex="0" />
+    </Grid>
+</UserControl>

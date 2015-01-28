@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="ResourceFramework.UserControls.NPCs.Trousers.Trouser1"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	
+	<Canvas Margin="6,238,0,0" Width="93" Height="65">
+		<Path x:Name="Path" Width="88.7502" Height="57.3108" Canvas.Left="2.40047" Canvas.Top="7.00097" Stretch="Fill" StrokeThickness="1.33333" StrokeMiterLimit="2.75" Stroke="#FF3D6980" Fill="#FF0B0068" Data="F1 M 5.52097,7.66763L 88.0302,7.66763C 89.3854,7.66763 90.484,8.76624 90.484,10.1215L 90.484,61.1913C 90.484,62.5465 89.3854,63.6451 88.0302,63.6451L 50.6096,63.6451L 45.2419,42.1743L 41.4079,63.6451L 5.52097,63.6451C 4.16574,63.6451 3.06714,62.5465 3.06714,61.1913L 3.06714,10.1215C 3.06714,8.76624 4.16574,7.66763 5.52097,7.66763 Z "/>
+		<Path x:Name="Path_0" Width="8.23467" Height="32.0059" Canvas.Left="40.7412" Canvas.Top="9.87655" Stretch="Fill" StrokeThickness="1.33333" StrokeMiterLimit="2.75" Stroke="#FF3D6980" Fill="#FF0B0068" Data="F1 M 41.4079,10.5432L 42.1747,41.2158L 47.5424,41.2158L 48.3092,10.5434L 41.4079,10.5432 Z "/>
+		<Path x:Name="Path_1" Width="92.7844" Height="9.96863" Canvas.Left="0" Canvas.Top="0" Stretch="Fill" Fill="#FF682600" Data="F1 M 4.26663,0L 88.5177,0C 90.8741,0 92.7844,1.91028 92.7844,4.26669L 92.7844,5.70193C 92.7844,8.05835 90.8741,9.96863 88.5177,9.96863L 4.26663,9.96863C 1.91025,9.96863 0,8.05835 0,5.70193L 0,4.26669C 0,1.91028 1.91025,0 4.26663,0 Z "/>
+		<Path x:Name="Path_2" Width="23.0045" Height="9.20184" Canvas.Left="33.7397" Canvas.Top="0.766876" Stretch="Fill" Fill="#FFA7A4A2" Data="F1 M 38.0063,0.766876L 52.4774,0.766876C 54.8339,0.766876 56.7441,2.67709 56.7441,5.03357L 56.7441,5.702C 56.7441,8.05847 54.8339,9.96872 52.4774,9.96872L 38.0063,9.96872C 35.6499,9.96872 33.7397,8.05847 33.7397,5.702L 33.7397,5.03357C 33.7397,2.67709 35.6499,0.766876 38.0063,0.766876 Z "/>
+	</Canvas>
+
+</UserControl>

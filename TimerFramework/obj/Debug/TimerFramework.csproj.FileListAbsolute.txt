@@ -1,0 +1,10 @@
+C:\Projects\Game\Webgames\TimerFramework\Bin\Debug\TimerFramework.dll
+C:\Projects\Game\Webgames\TimerFramework\Bin\Debug\TimerFramework.pdb
+C:\Projects\Game\Webgames\TimerFramework\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Game\Webgames\TimerFramework\obj\Debug\TimerFramework.dll
+C:\Projects\Game\Webgames\TimerFramework\obj\Debug\TimerFramework.pdb
+D:\GitHub\KraakJeRot\TimerFramework\Bin\Debug\TimerFramework.dll
+D:\GitHub\KraakJeRot\TimerFramework\Bin\Debug\TimerFramework.pdb
+D:\GitHub\KraakJeRot\TimerFramework\obj\Debug\TimerFramework.csprojResolveAssemblyReference.cache
+D:\GitHub\KraakJeRot\TimerFramework\obj\Debug\TimerFramework.dll
+D:\GitHub\KraakJeRot\TimerFramework\obj\Debug\TimerFramework.pdb

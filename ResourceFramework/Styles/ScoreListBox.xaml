@@ -1,0 +1,56 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="CircularButton.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Color x:Key="SelectedBackgroundColor">#FFCECECE</Color>
+    <Color x:Key="SelectedUnfocusedColor">#FFDDDDDD</Color>
+
+    <Style TargetType="ListBox" x:Key="lstBoxStyle">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+    </Style>
+
+    <Style x:Key="lstItemsStyle" TargetType="ListBoxItem">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ListBoxItem">
+                    <Border x:Name="Border" Padding="2">
+                        <Border.Background>
+                            <SolidColorBrush Color="Transparent" />
+                        </Border.Background>
+
+                        <Grid x:Name="scoreGrid">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="100" />
+                            </Grid.RowDefinitions>
+                            <Button IsTabStop="False" Style="{StaticResource btn}" Grid.Column="0" Grid.Row="0">
+                                <Button.Background>
+                                    <SolidColorBrush Color="{Binding Path=Background}" />
+                                </Button.Background>
+                                <Button.Content>
+                                    <TextBlock Text="{Binding Path=Ranking}" Foreground="Black" FontSize="22" FontWeight="Bold"/>
+                                </Button.Content>
+                            </Button>
+
+                            <StackPanel Grid.Column="1" Grid.Row="0" >
+                                <TextBlock Text="{Binding Path=TotalPoints}" Foreground="White" FontSize="15" FontWeight="SemiBold"/>
+                                <TextBlock Text="{Binding Path=Name}" Foreground="White" FontSize="14"/>
+                                <TextBlock Text="{Binding Path=Country}" Foreground="White" FontSize="14"/>
+                                <TextBlock Text="{Binding Path=Date, ConverterCulture=nl-NL, StringFormat=\{0:D\}}" Foreground="White" FontSize="14"/>
+                            </StackPanel>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="ResourceFramework.UserControls.Weapon.Table"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="200" Width="300">
+
+	<Grid x:Name="LayoutRoot">
+
+		<Canvas x:Name="weaponOrigin" Canvas.Left="110" Canvas.Top="190" Height="1" Margin="0,0,0,0" Width="1" />
+		<Canvas x:Name="weaponBulletOrigin" Canvas.Left="110" Canvas.Top="190" Height="1" Margin="0,0,0,0" Width="1" />
+
+		<Viewbox x:Name="Table3" Height="200" Width="300">
+			<Grid>
+				<Path x:Name="Path" StrokeThickness="0.772188" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Stroke="#FF6E3D12" Fill="#FFFFE6D5" Data="F1 M 0.386135,70.2043L 189.407,211.973L 512.386,70.2043L 280.517,0.386047L 0.386135,70.2043 Z "/>
+				<Path x:Name="Path_1" StrokeThickness="0.772188" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Stroke="#FF6E3D12" Fill="#FFDEAA87" Data="F1 M 188.935,213.077L 190.108,384.386L 213.989,371.23L 214.626,242.806L 498.898,104.451L 499.625,210.749L 511.704,203.93L 512.306,70.2043L 188.935,213.077 Z "/>
+				<Path x:Name="Path_2" StrokeThickness="0.772188" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Stroke="#FF6E3D12" Fill="#FF502D16" Data="F1 M 0.392101,71.2914L 1.44008,224.511L 11.7475,233.659L 10.8329,99.8768L 161.811,235.946L 162.655,359.437L 188.592,384.386L 187.404,210.79L 0.392101,71.2914 Z "/>
+				<Path x:Name="Path_3" StrokeThickness="0.772188" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Stroke="#FF6E3D12" Fill="#FFA05A2C" Data="F1 M 13.2631,233.659L 26.8578,226.798L 24.5519,111.31L 9.31706,99.8768L 13.2631,233.659 Z "/>
+				<Path x:Name="Path_4" StrokeThickness="0.772188" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Stroke="#FF6E3D12" Fill="#FF502D16" Data="F1 M 499.625,210.79L 485.955,206.216L 486.51,109.024L 498.891,103.307L 499.625,210.79 Z "/>
+			</Grid>
+		</Viewbox>
+	</Grid>
+</UserControl>

@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="ResourceFramework.UserControls.Weapon.Brick"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="75" Height="26">
+
+	<Grid x:Name="LayoutRoot" Width="75" Height="26">
+
+		<Canvas x:Name="weaponOrigin" Canvas.Left="35" Canvas.Top="15" Height="1" Margin="0,0,0,0" Width="1" />
+		<Canvas x:Name="weaponBulletOrigin" Canvas.Left="35" Canvas.Top="15" Height="1" Margin="0,0,0,0" Width="1" />
+
+		<Viewbox x:Name="Brick1" Width="75" Height="26">
+			<Grid>
+				<Path x:Name="Top_16" StrokeThickness="0.16" StrokeMiterLimit="2.75" Stroke="#FF000000" Data="F1 M 0.328979,4.40005L 12.1645,0.320068L 64.9645,0.320068L 53.1245,4.40002L 0.32,4.40002">
+					<Path.Fill>
+						<ImageBrush ImageSource="/ResourceFramework;component/Images/Weapons/brick.png"/>
+					</Path.Fill>
+				</Path>
+				<Path x:Name="Right_17" StrokeThickness="0.16" StrokeMiterLimit="2.75" Stroke="#FF000000" Data="F1 M 53.129,4.40009L 64.9645,0.320068L 64.9645,18.0001L 53.129,22.0801L 53.129,4.40009 Z ">
+					<Path.Fill>
+						<ImageBrush ImageSource="/ResourceFramework;component/Images/Weapons/brick.png"/>
+					</Path.Fill>
+				</Path>
+				<Path x:Name="Front_18" StrokeThickness="0.16" StrokeMiterLimit="2.75" Stroke="#FF000000" Data="F1 M 0.324492,4.40009L 0.324488,22.0801L 53.129,22.0801L 53.129,4.40009L 0.324492,4.40009 Z ">
+					<Path.Fill>
+						<ImageBrush ImageSource="/ResourceFramework;component/Images/Weapons/brick.png"/>
+					</Path.Fill>
+				</Path>
+			</Grid>
+		</Viewbox>
+	</Grid>
+</UserControl>

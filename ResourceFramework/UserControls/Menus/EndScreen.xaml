@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="ResourceFramework.UserControls.Menus.EndScreen"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="1200" Width="1600"
+	xmlns:Controls="clr-namespace:ResourceFramework.UserControls.Additional">
+	
+	<Canvas x:Name="canvasMainScreen" Height="1200" Width="1600">
+		<Canvas.RenderTransform>
+            <ScaleTransform x:Name="CanvasScale" ScaleX="1" ScaleY="1" />
+        </Canvas.RenderTransform>
+		
+		<Image x:Name="BackGroundImage" Source="../../Images/empty_wall.png" Height="1200" VerticalAlignment="Top" />
+    
+        <TextBlock x:Name="txtTotalPoints" Height="300" Canvas.Left="475" TextWrapping="Wrap" Canvas.Top="380" Width="800" FontSize="48" Foreground="White" TextAlignment="Center"/>
+        
+        <Controls:SignPost Height="950" Width="420" x:Name="SignPost" Canvas.Top="100" Canvas.Left="-200"/>
+
+        <Canvas Canvas.Left="557" Canvas.Top="805">
+            <Image x:Name="imgHighscoresPressed" Cursor="Hand" Source="../../Images/Buttons/stoneNotSet.png" Height="60" Width="154"/>
+            <TextBlock Text="Highscores" Canvas.Left="185" Canvas.Top="-13" FontSize="60" Foreground="White"/>
+        </Canvas>
+    </Canvas>
+</UserControl>

@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="ResourceFramework.UserControls.Menus.IntroScreen"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<Canvas x:Name="canvasMainScreen" >
+		<Image x:Name="BackgroundImage" Source="../../Images/empty_wall.png" Width="1600" Height="1200"/>
+		<TextBlock Text="Kraak je Rot" Canvas.Left="400" Canvas.Top="100" FontSize="120" Foreground="Black" FontWeight="Bold"/>
+
+		<Canvas Canvas.Left="313" Canvas.Top="445">
+			<Image x:Name="imgStartGamePressed" Cursor="Hand" Source="../../Images/Buttons/stoneNotSet.png" Height="60" Width="154"/>
+			<TextBlock Text="Start Game" Canvas.Left="185" Canvas.Top="-13" FontSize="60" Foreground="White"/>
+		</Canvas>
+
+		<Canvas Canvas.Left="557" Canvas.Top="625">
+			<Image x:Name="imgHelpPressed" Cursor="Hand" Source="../../Images/Buttons/stoneNotSet.png" Height="60" Width="154"/>
+			<TextBlock Text="Help" Canvas.Left="185" Canvas.Top="-13" FontSize="60" Foreground="White"/>
+		</Canvas>
+
+		<Canvas Canvas.Left="781" Canvas.Top="805">
+			<Image x:Name="imgCreditsPressed" Cursor="Hand" Source="../../Images/Buttons/stoneNotSet.png" Height="60" Width="154"/>
+			<TextBlock Text="Credits" Canvas.Left="185" Canvas.Top="-13" FontSize="60" Foreground="White"/>
+		</Canvas>
+	</Canvas>
+</UserControl>

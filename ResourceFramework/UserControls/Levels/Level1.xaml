@@ -1,0 +1,23 @@
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+	x:Class="ResourceFramework.UserControls.Levels.Level1" 
+	mc:Ignorable="d">
+
+	<Grid x:Name="LayoutRoot">
+		<!-- Level Surface ME -->
+		<Canvas x:Name="levelSurfaceME" Canvas.ZIndex="3" />
+
+		<!-- Level Surface Kraker -->
+		<Canvas x:Name="levelSurfaceKraker" Canvas.ZIndex="2" />
+
+		<!-- Level Background -->
+		<Canvas x:Name="LevelBackground" Width="1600" Height="1200" Canvas.Left="0" Canvas.Top="0" Canvas.ZIndex="1">
+			<Image x:Name="Image" Source="../../Images/Levels/level_1.png" Width="1600" Height="1200" Canvas.Left="0" Canvas.Top="0" />
+		</Canvas>
+		
+		<!-- Window Background -->
+		<Image Source="../../Images/Levels/level_1_window_background.png" Stretch="Fill" Width="1600" Height="1200" Canvas.ZIndex="0" />
+	</Grid>
+</UserControl>

@@ -1,0 +1,8 @@
+﻿<UserControl x:Class="ResourceFramework.UserControls.NPCs.Shirts.Shirt4"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<Canvas Margin="6,123,0,0" Width="93" Height="117">
+		<Path x:Name="Shirt" Width="92.4143" Height="116.731" Stretch="Fill" Fill="#FF230FD2" Data="F1 M 22.6222,19.6641C 15.4218,23.821 13.5807,20.5121 11.4888,27.2195L 11.4888,27.2195C 11.962,27.7363 24.313,36.7847 12.4221,55.929L 12.4221,55.929C 12.4221,55.929 10.5848,127.314 12.4036,128.098L 102.887,128.098C 104.592,127.691 103.636,53.3088 103.636,53.3088L 103.636,53.3088C 92.3234,41.1334 103.158,27.6174 103.636,27.2195L 103.636,27.2195C 100.701,19.3619 97.0516,21.6241 90.9117,19.0667L 56.0255,11.3671L 22.6222,19.6641 Z " UseLayoutRounding="False"/>
+	</Canvas>
+</UserControl>

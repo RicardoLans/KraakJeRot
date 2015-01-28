@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="ResourceFramework.UserControls.Defend.Shield"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" Width="154">
+    
+    <Grid x:Name="LayoutRoot" HorizontalAlignment="Left" Width="155">
+    	<Viewbox x:Name="vbShield" Width="137.92" Height="286.814" Canvas.Left="12.64" Canvas.Top="7.74637" HorizontalAlignment="Left" Margin="8,8,0,5">
+			<Canvas Width="137.92" Height="286.814">
+				<Path x:Name="Path" Width="137.92" Height="286.096" Canvas.Left="2.27392e-005" Canvas.Top="0.717286" Stretch="Fill" StrokeThickness="0.32" StrokeLineJoin="Round" Stroke="#FF000000" Data="F1 M 137.008,284.819C 137.008,285.553 118.685,262.81 70.5878,262.076C 22.4908,261.342 0.732593,285.553 0.160023,285.92C 0.160023,285.92 0.160023,22.88 0.160023,23.6136C 0.160005,24.3474 25.3537,0.160004 73.4507,0.893646C 121.548,1.62729 137.76,23.7073 137.76,22.9736L 137.58,286.654">
+					<Path.Fill>
+						<LinearGradientBrush StartPoint="-0.246512,-0.00778133" EndPoint="1.30665,-0.00778133">
+							<LinearGradientBrush.RelativeTransform>
+								<TransformGroup>
+									<SkewTransform CenterX="-0.246512" CenterY="-0.00778133" AngleX="-37.8825" AngleY="0"/>
+									<RotateTransform CenterX="-0.246512" CenterY="-0.00778133" Angle="31.0778"/>
+								</TransformGroup>
+							</LinearGradientBrush.RelativeTransform>
+							<LinearGradientBrush.GradientStops>
+								<GradientStop Color="#FF0A0058" Offset="0"/>
+								<GradientStop Color="#FF05002C" Offset="0.827907"/>
+								<GradientStop Color="#FF000000" Offset="1"/>
+							</LinearGradientBrush.GradientStops>
+						</LinearGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path x:Name="Path_0" Width="102.989" Height="60.1634" Canvas.Left="18.7318" Canvas.Top="26.1702" Stretch="Fill" Fill="#FFB6B6B6" Data="F1 M 121.157,85.9475C 121.157,86.102 107.444,81.3139 71.4446,81.1594C 35.4456,81.0049 19.1603,86.102 18.7318,86.1792C 18.7318,86.1792 18.7318,30.8023 18.7318,30.9568C 18.7318,31.1113 37.5884,26.0192 73.5874,26.1736C 109.586,26.3281 121.721,30.9765 121.721,30.8221L 121.586,86.3336"/>
+				<Rectangle x:Name="Rectangle" Width="14.56" Height="38.24" Canvas.Left="29.44" Canvas.Top="130.814" Stretch="Fill" StrokeThickness="0.48" StrokeLineJoin="Round" Stroke="#FFFFFFFF" Fill="#FF000000"/>
+				<Rectangle x:Name="Rectangle_1" Width="14.56" Height="38.24" Canvas.Left="91.64" Canvas.Top="131.214" Stretch="Fill" StrokeThickness="0.48" StrokeLineJoin="Round" Stroke="#FFFFFFFF" Fill="#FF000000"/>
+			</Canvas>
+		</Viewbox>
+    </Grid>
+</UserControl>

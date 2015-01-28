@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="ResourceFramework.UserControls.NPCs.Arms.LeftArm1"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<Canvas Margin="65,135,0,0" Width="41" Height="86">
+		<Path x:Name="LeftArm" Width="40.1161" Height="85.833" Stretch="Fill" Fill="#FF272826" Data="F1 M 72.0806,95.4075L 72.1432,95.1876C 72.1432,95.1876 75.6772,97.0165 81.4073,99.4361C 87.1384,101.856 92.1162,108.114 92.1162,108.114C 92.1162,108.114 106.21,76.3489 106.596,72.6137C 106.982,68.8785 109.272,63.1979 110.155,57.7106C 111.039,52.2236 112.197,29.131 112.197,29.131C 112.197,29.131 110.622,26.349 109.042,24.7785C 107.461,23.2072 90.5545,17.6924 95.842,30.7811C 95.842,30.7811 86.2164,71.8797 72.0806,95.4075 Z " UseLayoutRounding="False" RenderTransformOrigin="0.723,0.07">
+			<Path.RenderTransform>
+				<CompositeTransform Rotation="-24.821"/>
+			</Path.RenderTransform>
+		</Path>
+	</Canvas>
+</UserControl>

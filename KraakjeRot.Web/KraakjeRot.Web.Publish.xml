@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Publish\KraakjeRot" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/KraakjeRot.Web.dll" publishTime="12/17/2011 12:02:14" />
+    <file relUrl="bin/KraakjeRot.Web.pdb" publishTime="12/17/2011 12:02:14" />
+    <file relUrl="Web.config" publishTime="01/21/2011 03:36:16" />
+    <file relUrl="index.html" publishTime="01/21/2011 02:45:30" />
+    <file relUrl="index.aspx" publishTime="01/08/2011 00:41:56" />
+    <file relUrl="Silverlight.js" publishTime="12/10/2010 19:20:40" />
+    <file relUrl="ClientBin/KraakjeRot.xap" publishTime="01/21/2011 03:34:40" />
+  </publishProfile>
+</publishData>

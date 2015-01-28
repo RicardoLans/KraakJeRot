@@ -1,0 +1,11 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="KraakjeRot" EntryPointType="KraakjeRot.App" RuntimeVersion="5.0.61118.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="KraakjeRot" Source="KraakjeRot.dll" />
+    <AssemblyPart x:Name="GameFramework" Source="GameFramework.dll" />
+    <AssemblyPart x:Name="HelperFramework" Source="HelperFramework.dll" />
+    <AssemblyPart x:Name="Microsoft.Expression.Controls" Source="Microsoft.Expression.Controls.dll" />
+    <AssemblyPart x:Name="ResourceFramework" Source="ResourceFramework.dll" />
+    <AssemblyPart x:Name="TimerFramework" Source="TimerFramework.dll" />
+    <AssemblyPart x:Name="Microsoft.Expression.Drawing" Source="Microsoft.Expression.Drawing.dll" />
+  </Deployment.Parts>
+</Deployment>

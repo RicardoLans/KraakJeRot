@@ -1,0 +1,41 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--<MediaElement x:Key="Laser" AutoPlay="False" Source="laser.mp3"/>
+    <MediaElement x:Key="Laugh" AutoPlay="False" Source="hohoho.mp3"/>
+    <MediaElement x:Key="R2D2" AutoPlay="False" Source="R2D2.mp3" />
+    <MediaElement x:Key="Zipper" AutoPlay="False" Source="Zipper.mp3"/>
+    <MediaElement x:Key="Shaver" AutoPlay="False" Source="Shaver.mp3"/>
+    <MediaElement x:Key="Footsteps1" AutoPlay="False" Source="Footsteps1.mp3"/>
+    <MediaElement x:Key="BusSound" AutoPlay="False" Source="BusSound.mp3"/>
+    <MediaElement x:Key="ChainSaw" AutoPlay="False" Source="ChainSaw.mp3"/>
+    <MediaElement x:Key="Clong" AutoPlay="False" Source="Clong.mp3"/>
+    <MediaElement x:Key="FailureLaugh" AutoPlay="False" Source="FailureLaugh.mp3"/>
+    <MediaElement x:Key="SoundUp" AutoPlay="False" Source="SoundUp.mp3"/>-->
+
+    <MediaElement x:Key="Siren" AutoPlay="False" Source="Siren.mp3"/>
+    <MediaElement x:Key="SilencerShot" AutoPlay="False" Source="SilencerShot.mp3"/>
+    <MediaElement x:Key="Shotgun" AutoPlay="False" Source="Shotgun.mp3"/>
+
+    <MediaElement x:Key="PowerUp" AutoPlay="False" Source="PowerUp.mp3"/>
+    <MediaElement x:Key="Popping" AutoPlay="False" Source="Popping.mp3"/>
+    <MediaElement x:Key="Jump" AutoPlay="False" Source="Jump.mp3"/>
+    <MediaElement x:Key="Helicopter" AutoPlay="False" Source="Helicopter.mp3"/>
+
+    <MediaElement x:Key="Footsteps2" AutoPlay="False" Source="Footsteps2.mp3"/>
+    <MediaElement x:Key="Scream" AutoPlay="False" Source="Scream.mp3"/>
+
+    <MediaElement x:Key="Applause" AutoPlay="False" Source="Applause.mp3"/>
+    <MediaElement x:Key="Applause2" AutoPlay="False" Source="Applause2.mp3"/>
+    <MediaElement x:Key="Failure" AutoPlay="False" Source="Failure.mp3"/>
+
+    <MediaElement x:Key="Bullet" AutoPlay="False" Source="Bullet.mp3"/>
+
+    <MediaElement x:Key="Button1" AutoPlay="False" Source="Button1.mp3"/>
+    <MediaElement x:Key="Button3" AutoPlay="False" Source="Button3.mp3"/>
+    <MediaElement x:Key="Button4" AutoPlay="False" Source="Button4.mp3"/>
+
+
+
+</ResourceDictionary>

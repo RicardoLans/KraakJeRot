@@ -1,0 +1,23 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<TextBlock x:Key="IntroScreen_StartGame" Text="Start game" />
+	<TextBlock x:Key="IntroScreen_Help" Text="Help" />
+	<TextBlock x:Key="IntroScreen_Credits" Text="Credits" />
+
+	<TextBlock x:Key="ChooseSideScreen_ME" Text="ME" />
+	<TextBlock x:Key="ChooseSideScreen_Kraker" Text="Kraker" />
+
+	<TextBlock x:Key="HighScores" Text="Victory!! 
+You have 20 points!" />
+
+	<TextBlock x:Key="EndText" Text="This is the end!" />
+    
+    <TextBlock x:Key="LoseText" Text="Je hebt het einde niet gehaald. Jammer, probeer het nog eens! Je bent geeindigd met:  {0} Punten" />
+    
+    <TextBlock x:Key="WinText" Text="Je hebt het einde gehaald. Gefeliciteerd! Je bent geeindigd met: {0} Punten" />
+
+
+
+</ResourceDictionary>
